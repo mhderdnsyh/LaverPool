@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logolaverpool"
+        android:layout_width="148dp"
+        android:layout_height="63dp"
+        android:background="@drawable/logolaverpool1" />
+
+    <ImageView
+        android:id="@+id/id"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/logolaverpool"
+        android:background="@drawable/logoid" />
+
+    <ImageView
+        android:id="@+id/logopembayaran"
+        android:layout_width="327dp"
+        android:layout_height="184dp"
+        android:layout_below="@id/logolaverpool"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:onClick="clickgambar"
+        android:background="@drawable/logopembayaran" />
+
+    <ImageView
+        android:id="@+id/pembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="129dp"
+        android:layout_below="@id/logopembayaran"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pembayaran" />
+
+    <ImageView
+        android:id="@+id/btngeser"
+        android:layout_width="80dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/pembayaran"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btngeser3" />
+
+    <Button
+        android:id="@+id/masuk"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/btngeser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/masuk"
+        android:onClick="clickMasuk"
+        android:text="@string/masuk"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/belumada"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/masuk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/belumada"
+        android:onClick="clickBelumAdaAkun" />
+
+    <ImageView
+        android:id="@+id/denganmasuk"
+        android:layout_width="381dp"
+        android:layout_height="57dp"
+        android:layout_below="@id/belumada"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/denganmasuk" />
+
+</RelativeLayout>

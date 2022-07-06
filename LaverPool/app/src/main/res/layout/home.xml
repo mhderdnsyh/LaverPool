@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="148dp"
+            android:layout_height="63dp"
+            android:background="@drawable/logolaverpool1" />
+
+        <ImageView
+            android:id="@+id/logoo"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_below="@id/logo"
+            android:background="@drawable/laperya" />
+
+        <ImageView
+            android:id="@+id/txtanekakulimer"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/logoo"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/txtanekakuliner" />
+
+        <ImageView
+            android:id="@+id/btnfood"
+            android:layout_width="95dp"
+            android:layout_height="105dp"
+            android:layout_below="@id/txtanekakulimer"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btnfood"
+            android:onClick="clickFood" />
+
+        <ImageView
+            android:id="@+id/btndrink"
+            android:layout_width="95dp"
+            android:layout_height="105dp"
+            android:layout_below="@id/txtanekakulimer"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/btnfood"
+            android:background="@drawable/btndrink"
+            android:onClick="clickDrink" />
+
+        <ImageView
+            android:id="@+id/btndessert"
+            android:layout_width="95dp"
+            android:layout_height="105dp"
+            android:layout_below="@id/txtanekakulimer"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:onClick="clickDessert"
+            android:layout_toRightOf="@id/btndrink"
+            android:background="@drawable/btndessert" />
+
+        <ImageView
+            android:id="@+id/txtrecommended"
+            android:layout_width="150dp"
+            android:layout_height="23dp"
+            android:layout_below="@id/btnfood"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/recommended" />
+
+        <ImageView
+            android:id="@+id/btnmieaceh"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:onClick="clickMieaceh"
+            android:layout_below="@id/txtrecommended"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btnmieaceh" />
+
+        <ImageView
+            android:id="@+id/btnnasikuning"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/txtrecommended"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/btnmieaceh"
+            android:background="@drawable/btnnasikuning"
+            android:onClick="clickNasikuning" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/bghome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/bghome" />
+</RelativeLayout>

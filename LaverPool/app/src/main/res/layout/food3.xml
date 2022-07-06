@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgroundtambahpesanan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgnasikuning"
+        android:layout_width="391dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/imgnasikuning" />
+
+    <ImageView
+        android:id="@+id/nasikuning"
+        android:layout_width="282dp"
+        android:layout_height="83dp"
+        android:layout_below="@id/imgnasikuning"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/mieaceh1" />
+
+    <TextView
+        android:id="@+id/tvjenis_kelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nasikuning"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/jenis_makanan"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgtingkat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nasikuning"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100sp"
+            android:text="@string/biasa" />
+
+        <RadioButton
+            android:id="@+id/rb_Sedang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:text="Special" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_jumlahBarang"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgtingkat"
+        android:layout_marginLeft="30dp"
+        android:inputType="number"
+        android:hint="Jumlah Barang" />
+
+    <ImageView
+        android:id="@+id/btnsukai"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_jumlahBarang"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btnsukai" />
+
+    <Button
+        android:id="@+id/btntambahpesanana"
+        android:layout_width="272dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/btnsukai"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btntambahpesanan"
+        android:onClick="clickTambahpesanan"
+        android:text="@string/tambah_pesanan"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>

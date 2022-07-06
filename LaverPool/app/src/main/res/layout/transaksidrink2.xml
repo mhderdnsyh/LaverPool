@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="190dp"
+        android:background="@drawable/bgtransaksi" />
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/logolaverpool"
+        android:layout_width="148dp"
+        android:layout_height="63dp"
+        android:background="@drawable/logolaverpool1" />
+
+    <ImageView
+        android:id="@+id/transaksi"
+        android:layout_width="209dp"
+        android:layout_height="112dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logolaverpool"
+        android:background="@drawable/group"
+        android:paddingTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvnamamakanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transaksi"
+        android:layout_marginTop="20dp"
+        android:text="@string/nama"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tvnamamakanan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transaksi"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/tvtingkatkepedasan"
+        android:text="@string/es_dawet_cendol"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvjumlahpesanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvnamamakanan"
+        android:layout_marginTop="20dp"
+        android:text="@string/jumlah_pesanan"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tvjumlahpesanan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvnamamakanan"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/tvtingkatkepedasan"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvtingkatkepedasan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvjumlahpesanan"
+        android:layout_marginTop="20dp"
+        android:text="@string/tingkat_kepedasann"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tvtingkatkepedasan1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvjumlahpesanan"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/tvtingkatkepedasan"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/txttotalbayar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvtingkatkepedasan"
+        android:layout_marginTop="40dp"
+        android:text="Total Bayar"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txttotalbayar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvtingkatkepedasan"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/tvtingkatkepedasan"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/kembalikemenu"
+        android:layout_width="330dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/txttotalbayar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/masuk"
+        android:onClick="clickHome"
+        android:text="@string/kembali_ke_menu_utama"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/tengkyu"
+            android:layout_width="2050dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="450dp"
+            android:background="@drawable/terimakasih" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
